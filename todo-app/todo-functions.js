@@ -11,6 +11,7 @@ const getSavedTodos = function () {
     } else {
     return []
     }
+    
 }
 
 //Save todos to localStorage
