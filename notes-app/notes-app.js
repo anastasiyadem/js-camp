@@ -28,5 +28,9 @@ document.querySelector('#filter-by').addEventListener('change', function(e) {
     console.log(e.target.value)
 })
 
-//1. Setup link href to  include link with id
-//2. Setup the assign call to include hash with id
+window.addEventListener('storage', function(e) {
+    if (e.key === 'notes') {
+        notes = JSON.parse(e.newValue)
+        renderNotes(notes, filters)   
+    }
+})
