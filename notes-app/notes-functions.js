@@ -1,3 +1,13 @@
+'use strict'
+
+const isPublic = true
+let data
+const processData = () => {
+    data = '129823760'
+}
+processData()
+console.log(data)
+
 //Read existing notes from localStorage
 const getSavedNotes = () => {
     const notesJSON = localStorage.getItem('notes')
